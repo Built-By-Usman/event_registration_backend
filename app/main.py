@@ -10,7 +10,7 @@ load_dotenv()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://built-by-usman.github.io/event_registration_admin_panel/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
