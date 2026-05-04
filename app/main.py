@@ -8,10 +8,11 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI(title="Event Registration System", root_path="/event_registration_system")
 load_dotenv()
 
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://built-by-usman.github.io/event_registration_admin_panel/"],
-    allow_credentials=True,
+    allow_origins=["*"],  # allow all origins
+    allow_credentials=False,  # must be False when using "*"
     allow_methods=["*"],
     allow_headers=["*"],
 )
